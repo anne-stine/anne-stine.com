@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+}
+
+/* Rounded Elements */
+
+.contact a,
+.card,
+img {
+    border-radius: 10px;
+}
+
+/* Font Styling */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+button {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+    padding: 5px 0;
+}
+
+h1 {
+    font-size: 4rem;
+    border-bottom: 2px solid #E5E5E5;
+    margin-bottom: 30px;
+    padding: 40px 0 10px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+/* Links */
+
+.header-container a:hover {
+    border-bottom: 2px solid;
+}
+
+.body-container a {
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+
+/* Buttons */
+
+.contact a {
+    background: #000;
+    color: #fff;
+    padding: 18px 25px;
+}
+
+/* Navbar */
+
+.header-container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: #fff; 
+}
+
+.header-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.site-name {
+    flex-grow: 3;
+}
+
+.navigation-wrapper {
+    flex-grow: 2;
+}
+
+header,
+header a,
+.nav-site {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+/* Body Container */
+
+.body-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px 50px;
+}
+
+/* Cards */
+
+.card {
+    margin: 30px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card--content {
+    padding: 50px 60px 60px;
+}
+
+/* Box Shadows & Hover Effects */
+
+.contact a,
+.card {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.contact a:hover,
+.card:hover {
+    box-shadow: 0 0 15px 5px rgba(38, 0, 255, 0.1);
+}
+
+/* Fade-In Animations */
+  
+/* .fade-in-bottom {
+	animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+} */
+  
