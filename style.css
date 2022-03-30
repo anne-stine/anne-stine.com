@@ -244,7 +244,7 @@ footer a:hover {
 
 /* Smaller Screens */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 649px) {
     
     /* Navbar */
     .nav-items {
