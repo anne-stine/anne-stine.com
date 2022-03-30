@@ -257,9 +257,9 @@ footer a:hover {
         position: absolute;
         top: 100px;
         left: 0;
-        width: 100vw;
+        width: 100%;
         height: 70vh;
-        background: rgba(255, 192, 203, 0.393);
+        background: rgba(0, 0, 0, 0.8);
     }
 
     /* Project Info */
