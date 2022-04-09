@@ -3,20 +3,22 @@ html,body {
     margin: 0;
     padding: 0;
 
+    background: rgb(248, 248, 248);
+
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 section {
     /* Auto layout */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     width: 100%;
     height: fit-content;
     padding: 40px 0;
+
+    overflow-x: hidden;
 }
 
 .container {
@@ -72,6 +74,7 @@ section {
 .col {
     flex: 1;
     width: 100%;
+    height: 100%;
 }
 
 .img {
@@ -89,9 +92,9 @@ p,a,span,ul,button {
     font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
+    word-break: keep-all;
 
     margin: 0;
-    /* padding: 5px 0; */
     
     color: #000;
     transition: all ease-in-out .3s;
@@ -121,15 +124,14 @@ h1, h2, h3, h4, h5, h6,
 button {
     background: none;
     color: #aaa;
-
     padding: 16px 24px;
-    border: 2px solid #aaa;
+    border: 2px solid;
     border-radius: 50px;
+    width: fit-content;
 }
 
 button:hover {
     color: #fff;
-    border: 2px solid #fff;
 }
 
 /* Tags */
@@ -147,7 +149,7 @@ button:hover {
 
 /* Remove Bullet Styling */
 
-.nav-items,.footer-wrapper {
+.nav-items, #footer ul {
     list-style: none;
 }
 
@@ -159,7 +161,7 @@ button:hover {
     z-index: 1;
     
     width: 100%;
-    background: #fff;
+    background: rgb(248, 248, 248);
     
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
 }
@@ -218,9 +220,9 @@ button:hover {
 .card {
     width: 40rem;
 
-    border: 2px solid;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    background: #fff;
 
     transition: all ease-in-out .3s;
 }
@@ -250,8 +252,15 @@ button:hover {
     position: relative;
     bottom: 0;
 
-    margin-top: 40px;
-    padding: 40px 0 120px;
+    padding: 40px 0;
+}
+
+#footer .col {
+    padding: 0;
+}
+
+.align-right {
+    text-align: right;
 }
 
 /* Smaller Screens */
@@ -268,6 +277,10 @@ button:hover {
 
     h3, .big {
         font-size: 1.5rem;
+    }
+
+    #footer {
+        padding: 40px 0 120px;
     }
 }
 
@@ -288,4 +301,8 @@ button:hover {
     .bigger {
         font-size: 1rem;
     }
+}
+
+#contact {
+    padding-bottom: 80px;
 }
