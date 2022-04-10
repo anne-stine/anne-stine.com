@@ -29,7 +29,7 @@
     </nav>
     <!-- Section / About -->
     <section id="about" class="dark">
-        <div class="container hero">
+        <div class="container flex-row hero">
             <div class="col">
                 <h2>About</h2>
                 <p class="bigger">My name is Anne-Stine Gjervoldstad and I am a professional communication designer and junior front-end developer.</p>
@@ -52,10 +52,26 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <div class="flex-row scroll">
+            <div class="grid-container">
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-img" src="images/anne-stine.github.io_drumkit_.png" alt="">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="images/anne-stine.github.io_password-generator.png" alt="">
+                    </div>
+                    <div class="text-wrapper">
+                        <h3>Password generator</h3>
+                        <div class="flex-row tags-wrapper">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <p>Generate random passwords and copy one to your clipboard.</p>
+                        <a class="card-link" href="https://github.com/anne-stine/password-generator" target="_blank">Open in GitHub</a>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card">
+                    <img class="card-img" src="images/anne-stine.github.io_drumkit.png" alt="">
                     <div class="text-wrapper">
                         <h3>Drumkit</h3>
                         <div class="flex-row tags-wrapper">
@@ -64,12 +80,12 @@
                             <span class="tag">JavaScript</span>
                         </div>
                         <p>Interact with your keyboard to make cool drum sounds and visual effects!</p>
-                        <a class="card-btn" href="projects/drumkit.html">See project</a>
+                        <a class="card-link" href="https://github.com/anne-stine/drumkit" target="_blank">Open in GitHub</a>
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-img" src="images/anne-stine.github.io_to-do-list_.png" alt="">
+                    <img class="card-img" src="images/anne-stine.github.io_to-do-list.png" alt="">
                     <div class="text-wrapper">
                         <h3>To-do list</h3>
                         <div class="flex-row tags-wrapper">
@@ -78,34 +94,34 @@
                             <span class="tag">JavaScript</span>
                         </div>
                         <p>Create little reminder tasks and cross them out when they're completed.</p>
-                        <a class="card-btn" href="projects/to-do-list.html">See project</a>
+                        <a class="card-link" href="https://github.com/anne-stine/to-do-list" target="_blank">Open in GitHub</a>
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-img" src="images/anne-stine.github.io_unit-converter_.png" alt="">
+                    <img class="card-img" src="images/anne-stine.github.io_unit-converter.png" alt="">
                     <div class="text-wrapper">
-                        <h3>Unit Converter</h3>
+                        <h3>Unit converter</h3>
                         <div class="flex-row tags-wrapper">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
                             <span class="tag">JavaScript</span>
                         </div>
                         <p>Convert between metric and imperial units in length, volume and mass.</p>
-                        <a class="card-btn" href="projects/unit-converter.html">See project</a>
+                        <a class="card-link" href="https://github.com/anne-stine/unit-converter" target="_blank">Open in GitHub</a>
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-img" src="images/anne-stine.github.io_html-forms_.png" alt="">
+                    <img class="card-img" src="images/anne-stine.github.io_html-forms.png" alt="">
                     <div class="text-wrapper">
-                        <h3>Contact Form</h3>
+                        <h3>Contact form</h3>
                         <div class="flex-row tags-wrapper">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
                         </div>
                         <p>Did you know that a contact form can be organized into sections?</p>
-                        <a class="card-btn" href="projects/contact-form.html">See project</a>
+                        <a class="card-link" href="https://github.com/anne-stine/html-forms" target="_blank">Open in GitHub</a>
                     </div>
                 </div>
             </div>
@@ -115,8 +131,8 @@
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p class="bigger">Looking for a <b>passionate designer and front-end developer</b> who cares about <b>work culture and customer experience?</b> Look no further. Let's have a chat!</p>
-            <p class="bigger">annestine.kodehode@gmail.com</p>
+            <p>Looking for a passionate designer and front-end developer who cares about work culture and customer experience? Look no further. Let's have a chat!</p>
+            <p>annestine.kodehode@gmail.com</p>
         </div>
     </section>
     <!-- Footer -->

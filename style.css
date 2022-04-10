@@ -1,4 +1,5 @@
 /* General Styling */
+
 html,body {
     margin: 0;
     padding: 0;
@@ -30,7 +31,6 @@ section {
     max-width: 1100px;
     margin: 0 auto;
     padding: 24px;
-    gap: 24px;
 
     overflow-x: visible;
 
@@ -39,6 +39,7 @@ section {
 }
 
 /* Horizontal flex */
+
 .flex-row {
     /* Auto layout */
     display: flex;
@@ -49,12 +50,6 @@ section {
     gap: 24px;
 }
 
-.scroll {
-    overflow-x: scroll;
-    align-items: flex-start;
-
-}
-
 .hero {
     /* Auto layout */
     display: flex;
@@ -62,7 +57,6 @@ section {
     align-items: center;
 
     gap: 24px;
-
     margin-bottom: 40px;
 }
 
@@ -75,13 +69,6 @@ section {
     flex: 1;
     width: 100%;
     height: 100%;
-}
-
-.img {
-    border: 2px solid #aaa;
-    border-radius: 10px;
-    width: 100%;
-    height: 30vh;
 }
 
 /* Font Styling */
@@ -101,15 +88,15 @@ p,a,span,ul,button {
 }
 
 h1, h2 {
-    font-size: 3.75rem;
+    font-size: 3rem;
 }
 
-h3, .big {
-    font-size: 2.125rem;
+h3, .big, li a .big {
+    font-size: 2rem;
 }
 
 h4, .bigger {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 p {
@@ -143,7 +130,7 @@ button:hover {
 .tag {
     font-size: 0.875rem;
     padding: 5px 10px;
-    background: #EBEBEB;
+    background: #dadada;
     border-radius: 50px;
 }
 
@@ -170,15 +157,12 @@ button:hover {
     flex-grow: 1;
 }
 
-.nav-link a {
+.nav-link a, .card-link {
     font-weight: 500;
     padding: .25rem 0;
+    border-bottom: 2px solid;
 
     transition: none;
-}
-
-.nav-link a:hover {
-    border-bottom: 2px solid;
 }
 
 .nav-link a.active {
@@ -188,18 +172,19 @@ button:hover {
 /* Mobile Nav */
 
 #mobile-nav {
-    align-self: center;
-
     position: fixed;
     bottom: 24px;
     
-    background: #fff;
-    border: 2px solid;
+    background: #dadada;
     border-radius: 50px;
     padding: 1rem 1.5rem;
-    width: fit-content;
 
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+#mobile-nav .flex-row {
+    flex: none;
+    justify-content: center;
 }
 
 /* Dark sections */
@@ -208,19 +193,23 @@ button:hover {
     background: #000;
 }
 
-.dark h2, .dark p, .dark a {
-    color: #aaa;
+.dark h2, .dark p, .dark a, .dark button {
+    color: #c4c4c4;
 }
 
-.dark a:hover {
+.dark a:hover, .dark button:hover {
     color: #fff;
 }
 
 /* Section / Projects */
 
-.card {
-    width: 40rem;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
 
+.card {
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
     background: #fff;
@@ -241,13 +230,7 @@ button:hover {
     padding: 20px 40px 50px;
 }
 
-.card-btn {
-    text-transform: uppercase;
-    padding: 5px 0;
-    border-bottom: 2px solid;
-}
-
-/* Section / Footer */
+/* Footer */
 
 #footer {
     position: relative;
@@ -260,16 +243,29 @@ button:hover {
     padding: 0;
 }
 
+#footer a {
+    border-bottom: 2px solid;
+}
+
 .align-right {
     text-align: right;
 }
 
 /* Smaller Screens */
 
-@media screen and (max-width: 1200px) {
-    /* Hero */
+@media screen and (max-width: 649px) {
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .hero {
         flex-direction: column-reverse;
+    }
+
+    .project-info {
+        flex-direction: column;
+        gap: 40px;
     }
 
     h2 {
@@ -280,27 +276,17 @@ button:hover {
         font-size: 1.5rem;
     }
 
+    h4, .bigger {
+        font-size: 1rem;
+    }
+
     #footer {
-        padding: 40px 0 120px;
+        padding: 20px 0 100px;
     }
-}
-
-@media screen and (max-width: 649px) {
-
-    /* Project Info */
-    .project-info {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    /* Footer */
+    
     .footer-wrapper {
         flex-direction: column;
         text-align: center;
-    }
-
-    .bigger {
-        font-size: 1rem;
     }
 }
 

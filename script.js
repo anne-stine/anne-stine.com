@@ -1,8 +1,8 @@
 /* Make active nav item correspont with section (ID) in viewport */
-const activeNavState = () => 
+const activeNavState = () =>
 {
     /* Create an observer */
-    const observer = new IntersectionObserver(entries => 
+    const observer = new IntersectionObserver(entries =>
     {
         /* For each section (ID) in viewport, adjust nav link's class to correspond with target */
         entries.forEach(entry => {
@@ -22,12 +22,9 @@ const activeNavState = () =>
 window.addEventListener("DOMContentLoaded", activeNavState)
 
 /* Switch to mobile menu when screen width is less than 650px */
-const toggleNavType = () => 
+const toggleNavType = () =>
 {
-    /* Screen width */
-    let screenWidth = document.documentElement.clientWidth
-
-    if (screenWidth < 650) {
+    if (window.innerWidth < 650) {
         document.querySelector(".nav-items").setAttribute("id", "mobile-nav")
     } else {
         document.querySelector(".nav-items").setAttribute("id", "")
