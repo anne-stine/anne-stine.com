@@ -31,22 +31,19 @@
     <section id="about" class="dark">
         <div class="container flex-row hero">
             <div class="col">
-                <h2>About</h2>
-                <p class="bigger">My name is Anne-Stine Gjervoldstad and I am a professional communication designer and junior front-end developer.</p>
-                <ul>
-                    <li>HTML, CSS, JavaScript and React</li>
-                    <li>UI, Figma and prototyping</li>
-                    <li>Communication design and Adobe CC</li>
-                    <li>UX and customer first thinking</li>
-                    <li>Project management</li>
-                </ul>
-                <button>Download resume</button>
-                <div class="softwares-wrapper"></div>
+                <div class="img">
+                    <img src="images/AnneStine_3393.webp" alt="">
+                </div>
             </div>
             <div class="col">
-                <div class="img">
-                    <img src="images/DSC_0777.webp" alt="">
-                </div>
+                <h2>My name is Anne-Stine Gjervoldstad and I am passionate about UX.</h2>
+                <ul>
+                    <li>UX and customer first thinking</li>
+                    <li>UI, Figma and interactive prototyping</li>
+                    <li>Communication design and Adobe CC</li>
+                    <li>HTML, CSS, JavaScript and React</li>
+                </ul>
+                <a class="btn" href="pdf/Resume.pdf" target="_blank">Open resume</a>
             </div>
         </div>
     </section>
@@ -57,8 +54,25 @@
             <div class="grid-container">
                 <!-- Card -->
                 <div class="card">
+                    <img class="card-img" src="images/anne-stine.github.io_drumkit_1000x600.webp" alt="">
+                    <div class="text-wrapper">
+                        <h3>Drumkit</h3>
+                        <div class="flex-row tags-wrapper">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <p>Interact with your keyboard to make cool drum sounds and visual effects!</p>
+                        <div class="space-between">
+                            <a class="card-link" href="https://github.com/anne-stine/drumkit" target="_blank">Open in GitHub</a>
+                            <a class="card-link" href="https://anne-stine.github.io/drumkit/" target="_blank">Live preview</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="images/anne-stine.github.io_password-generator.png" alt="">
+                        <img class="card-img" src="images/anne-stine.github.io_password-generator_1000x600.webp" alt="">
                     </div>
                     <div class="text-wrapper">
                         <h3>Password generator</h3>
@@ -68,26 +82,37 @@
                             <span class="tag">JavaScript</span>
                         </div>
                         <p>Generate random passwords and copy one to your clipboard.</p>
-                        <a class="card-link" href="https://github.com/anne-stine/password-generator" target="_blank">Open in GitHub</a>
+                        <div class="space-between">
+                            <a class="card-link" href="https://github.com/anne-stine/password-generator" target="_blank">Open in GitHub</a>
+                            <a class="card-link" href="https://anne-stine.github.io/password-generator/" target="_blank">Live preview</a>
+                        </div>
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-img" src="images/anne-stine.github.io_drumkit.png" alt="">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="images/anne-stine.github.io_pokeapi_1000x600.webp" alt="">
+                    </div>
                     <div class="text-wrapper">
-                        <h3>Drumkit</h3>
+                        <h3>PokéApi</h3>
                         <div class="flex-row tags-wrapper">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
                             <span class="tag">JavaScript</span>
                         </div>
-                        <p>Interact with your keyboard to make cool drum sounds and visual effects!</p>
-                        <a class="card-link" href="https://github.com/anne-stine/drumkit" target="_blank">Open in GitHub</a>
+                        <p>Generate a random Pokémon with just a click!</p>
+                        <div class="space-between">
+                            <a class="card-link" href="https://github.com/anne-stine/pokeapi" target="_blank">Open in GitHub</a>
+                            <a class="card-link" href="https://anne-stine.github.io/pokeapi/" target="_blank">Live preview</a>
+                        </div>
                     </div>
                 </div>
+                
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-img" src="images/anne-stine.github.io_to-do-list.png" alt="">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="images/anne-stine.github.io_to-do-list_1000x600.webp" alt="">
+                    </div>
                     <div class="text-wrapper">
                         <h3>To-do list</h3>
                         <div class="flex-row tags-wrapper">
@@ -95,13 +120,15 @@
                             <span class="tag">CSS</span>
                             <span class="tag">JavaScript</span>
                         </div>
-                        <p>Create little reminder tasks and cross them out when they're completed.</p>
-                        <a class="card-link" href="https://github.com/anne-stine/to-do-list" target="_blank">Open in GitHub</a>
+                        <p>Note down your to-do's and cross them out!</p>
+                        <div class="space-between">
+                            <a class="card-link" href="https://github.com/anne-stine/to-do-list" target="_blank">Open in GitHub</a>
+                            <a class="card-link" href="https://anne-stine.github.io/to-do-list/" target="_blank">Live preview</a>
+                        </div>
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-img" src="images/anne-stine.github.io_unit-converter.png" alt="">
                     <div class="text-wrapper">
                         <h3>Unit converter</h3>
                         <div class="flex-row tags-wrapper">
@@ -109,21 +136,57 @@
                             <span class="tag">CSS</span>
                             <span class="tag">JavaScript</span>
                         </div>
-                        <p>Convert between metric and imperial units in length, volume and mass.</p>
-                        <a class="card-link" href="https://github.com/anne-stine/unit-converter" target="_blank">Open in GitHub</a>
+                        <p>Convert between metric and imperial units.</p>
+                        <div class="space-between">
+                            <a class="card-link" href="https://github.com/anne-stine/unit-converter" target="_blank">Open in GitHub</a>
+                            <a class="card-link" href="https://anne-stine.github.io/unit-converter/" target="_blank">Live preview</a>
+                        </div>
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-img" src="images/anne-stine.github.io_html-forms.png" alt="">
+                    <div class="text-wrapper">
+                        <h3>Lead tracker</h3>
+                        <div class="flex-row tags-wrapper">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <p>Google Chrome extension for tracking leads.</p>
+                        <div class="space-between">
+                            <a class="card-link" href="https://github.com/anne-stine/lead-tracker" target="_blank">Open in GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card">
+                    <div class="text-wrapper">
+                        <h3>Passenger counter app</h3>
+                        <div class="flex-row tags-wrapper">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <p>Having a hard time keeping count? Fret no more!</p>
+                        <div class="space-between">
+                            <a class="card-link" href="https://github.com/anne-stine/passenger-counter-app" target="_blank">Open in GitHub</a>
+                            <a class="card-link" href="https://anne-stine.github.io/passenger-counter-app/" target="_blank">Live preview</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card">
                     <div class="text-wrapper">
                         <h3>Contact form</h3>
                         <div class="flex-row tags-wrapper">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
                         </div>
-                        <p>Did you know that a contact form can be organized into sections?</p>
-                        <a class="card-link" href="https://github.com/anne-stine/html-forms" target="_blank">Open in GitHub</a>
+                        <p>Organising a contact form into neat little sections.</p>
+                        <div class="space-between">
+                            <a class="card-link" href="https://github.com/anne-stine/html-forms" target="_blank">Open in GitHub</a>
+                            <a class="card-link" href="https://anne-stine.github.io/html-forms/" target="_blank">Live preview</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,21 +195,20 @@
     <!-- Section / Contact -->
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <p>Looking for a passionate designer and front-end developer who cares about work culture and customer experience? Look no further. Let's have a chat!</p>
-            <p>annestine.kodehode@gmail.com</p>
+            <h2>Let's have a chat!</h2>
+            <p>Reach out by sending an email to annestine.kodehode(a)gmail.com. Make sure to also check out my Behance profile below to see my other design projects.</p>
         </div>
     </section>
     <!-- Footer -->
     <footer id="footer" class="dark">
         <div class="container flex-row">
-            <ul class="col">
-                <li><a class="big" href="https://www.linkedin.com/in/annestine" target="_blank">LinkedIn</a></li>
-                <li><a class="big" href="https://github.com/anne-stine" target="_blank">GitHub</a></li>
-                <li><a class="big" href="https://www.behance.net/annestine" target="_blank">Behance</a></li>
+            <ul>
+                <li><a class="medium" href="https://www.linkedin.com/in/annestine" target="_blank">LinkedIn</a></li>
+                <li><a class="medium" href="https://github.com/anne-stine" target="_blank">GitHub</a></li>
+                <li><a class="medium" href="https://www.behance.net/annestine" target="_blank">Behance</a></li>
             </ul>
-            <div class="col">
-                <p class="align-right">Designed and developed by Anne-Stine Gjervoldstad.</p>
+            <div class="col align-right">
+                <p>Designed and developed by Anne-Stine Gjervoldstad.</p>
             </div>
         </div>
     </footer>
